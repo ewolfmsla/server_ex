@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  server_ex:
+    image: server_ex
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      MIX_ENV: prod
+    ports:
+      - 8080:8080
